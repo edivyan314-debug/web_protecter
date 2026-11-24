@@ -1,5 +1,5 @@
-# Use official Node.js 18 Bullseye Slim image for reliable native compilation of better-sqlite3
-FROM node:18-bullseye-slim
+# Use official Node.js 20 Bookworm Slim image for modern LTS and active Debian package repositories
+FROM node:20-bookworm-slim
 
 # Install build dependencies for native SQLite (better-sqlite3) compilation
 RUN apt-get update && apt-get install -y --no-install-recommends \
